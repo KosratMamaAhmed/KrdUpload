@@ -1,0 +1,2 @@
+[build]
+  publish = "." # This means the root directory is the publish directory

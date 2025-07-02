@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload.io File Uploader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ئەپلۆدکردنی فایل بە Upload.io</h1>
+        <div class="upload-area" id="uploadArea">
+            <input type="file" id="fileInput" hidden>
+            <label for="fileInput" class="browse-label">
+                <p>فایلەکان بکێشە و فڕێ بدە یان <span class="browse-text">هەڵبژێرە</span></p>
+            </label>
+        </div>
+        <div class="file-details" id="fileDetails">
+            <p>هیچ فایلێک هەڵنەبژێردراوە.</p>
+        </div>
+        <button id="uploadBtn" class="upload-button" disabled>ئەپلۆد</button>
+        <div id="uploadStatus" style="margin-top: 20px; color: green;"></div>
+        <div id="uploadedFileUrl" style="margin-top: 10px;"></div>
+    </div>
+
+    <script src="https://js.upload.io/upload-js/v3.0.0/upload-js.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

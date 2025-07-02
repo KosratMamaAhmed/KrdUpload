@@ -3,14 +3,14 @@
 
 // Replace 'YOUR_UPLOAD_IO_API_KEY' with your actual API Key from Upload.io dashboard.
 // This is crucial for the uploader to work.
-const UPLOAD_IO_API_KEY = 'YOUR_UPLOAD_IO_API_KEY'; 
+const UPLOAD_IO_API_KEY = 'public_W23MTFj4y8xLMzeGo7MATTggeiWQ'; 
 
 // --- Debugging and Initialization ---
 let upload; // Declare upload variable globally or in a scope accessible by the event listeners
 
 // Check if the API key is set. If not, alert the user and prevent further execution.
 if (UPLOAD_IO_API_KEY === 'YOUR_UPLOAD_IO_API_KEY' || !UPLOAD_IO_API_KEY ) {
-    console.error('ERROR: Upload.io API Key is not set. Please replace "YOUR_UPLOAD_IO_API_KEY" in script.js.');
+    console.error('ERROR: Upload.io API Key is not set. Please replace "public_W23MTFj4y8xLMzeGo7MATTggeiWQ" in script.js.');
     alert('تکایە API Keyی Upload.io ی خۆت لە فایلی script.js دابنێ. دەتوانیت لە داشبۆردی Upload.io بەدەستی بهێنیت.');
     // Optionally, disable the upload button permanently if API key is missing
     document.addEventListener('DOMContentLoaded', () => {

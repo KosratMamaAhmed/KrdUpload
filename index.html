@@ -23,7 +23,10 @@
         <div id="uploadedFileUrl" style="margin-top: 10px;"></div>
     </div>
 
-    <!-- Load your script as a module -->
-    <script type="module" src="script.js"></script>
+    <!-- 1. Load the Upload.io SDK first with defer. This ensures it runs before our script. -->
+    <script src="https://js.upload.io/upload-js/v3.0.0/upload-js.min.js" defer></script>
+    
+    <!-- 2. Then, load your custom script file with defer. -->
+    <script src="script.js" defer></script>
 </body>
 </html>

@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM fully loaded and parsed.');
 
     // --- Configuration ---
-    // Replace 'YOUR_UPLOAD_IO_API_KEY' with your actual API Key from Upload.io dashboard.
+    // API Keyی خۆت لێرە دابنێ
     const UPLOAD_IO_API_KEY = 'public_W23MTFj4y8xLMzeGo7MATTggeiWQ'; 
 
     // --- DOM Element References ---
@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let selectedFile = null;
 
     // --- Initialization ---
-    // Check if the API key is set.
-    if (UPLOAD_IO_API_KEY === 'public_W23MTFj4y8xLMzeGo7MATTggeiWQ' || !UPLOAD_IO_API_KEY) {
+    // Check if the API key is still the default placeholder.
+    if (UPLOAD_IO_API_KEY === 'YOUR_UPLOAD_IO_API_KEY' || !UPLOAD_IO_API_KEY) {
         console.error('ERROR: Upload.io API Key is not set.');
         alert('تکایە API Keyی Upload.io ی خۆت لە فایلی script.js دابنێ.');
         uploadBtn.disabled = true;
